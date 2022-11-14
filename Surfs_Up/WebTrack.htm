@@ -1,0 +1,289 @@
+<!doctype html public "-//w3c//dtd html 4.01 transitional//en"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+<head>
+<title>The Web Track Sample Call Tracking System</title>
+
+<script type="text/javascript">
+<!--
+var downStrokeField;
+function autojump(fieldName,nextFieldName,fakeMaxLength)
+{
+var myForm=document.forms[document.forms.length - 1];
+var myField=myForm.elements[fieldName];
+myField.nextField=myForm.elements[nextFieldName];
+
+if (myField.maxLength == null)
+   myField.maxLength=fakeMaxLength;
+
+myField.onkeydown=autojump_keyDown;
+myField.onkeyup=autojump_keyUp;
+}
+
+function autojump_keyDown()
+{
+this.beforeLength=this.value.length;
+downStrokeField=this;
+}
+
+function autojump_keyUp()
+{
+if (
+   (this == downStrokeField) &&
+   (this.value.length > this.beforeLength) &&
+   (this.value.length >= this.maxLength)
+   )
+   this.nextField.focus();
+downStrokeField=null;
+}
+//-->
+</script>
+
+<noscript>This page uses Javascript. Your browser either doesn't support Javascript or you have it turned off. To see this page as it is meant to appear please use a Javascript enabled browser.</noscript>
+
+<meta http-equiv="content-style-type" content="text/css">
+<meta name="keywords" content="web pages, accessibility, JAWS, screen readers, Freedom Scientific, forms, context help">
+<meta name="description" content="This page demonstrates the use of forms with JAWS.">
+<style type="text/css">
+
+<!--
+fieldset {
+	padding: 10px;
+	background-color: #FFFFFF;
+}
+
+body {
+	font-face: Arial, Helvetica, sans-serif;
+	font-size: 13pt;
+	background-color: #003366;
+	margin-left: 25px;
+	margin-right: 25px
+}
+
+p {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13pt;
+	margin-top: 10px;
+	margin-bottom: 5px
+}
+
+-->
+</style>
+</head>
+
+<h1 align="left"><font color="#FFFFCC" size="6" face="Courier New, Courier, mono">The Web Track Sample Form</font></h1>
+
+<p align="left"><font color="#FFFFCC" size="4" face="Courier New, Courier, mono"><strong>Online Customer Tracking System</strong></font></p>
+
+<form action="">
+
+<table bgcolor="#FFFFFF" cellpadding="15" cellspacing="0" width="45%" border="1" bordercolor="#000000" rules="none">
+
+<tr valign="top">
+<td>
+
+<!-- *************************************************************************************** -->
+<fieldset>
+<p>
+<font face="Arial, Helvetica, sans-serif" size="4" color="#000066">
+<strong>Contact Information</strong>
+</font>
+</p>
+
+
+
+<p>
+<label for="FirstName"><strong>First *</strong></label>
+<input type="text" size="12" name="FirstName" id="FirstName" value="" aria-label="First name. This is a required field.">&nbsp;&nbsp;
+<label for="MiddleInitial"><strong>Middle</strong></label>
+<input type="text" size="1" maxlength="1" name="MiddleInitial" id="MiddleInitial" value="" title="Middle initial">&nbsp;&nbsp;
+<label for="LastName"><strong>Last *</strong></label>
+<input type="text" size="12" name="LastName" id="LastName" value="" aria-label="Last name. This is a required field.">
+</p>
+
+<br />
+
+<form action="../cgi-bin/mycgi.pl" METHOD=POST>
+
+<p>
+<label for="areacode"><strong>Area Code</strong></label>
+<input type="text" name="areacode" id="areacode" maxlength=3 size=3>&nbsp;&nbsp;
+
+<label for="prefix"><strong>Prefix</strong></label>
+<input type="text" name="prefix" id="prefix" maxlength=3 size=3>&nbsp;&nbsp;
+
+<label for="number"><strong>Number</strong></label>
+<input type="text" name="number" id="number" maxlength=4 size=4>
+</p>
+<br />
+<p>
+<label for="ce"><strong>E-Mail Address *</strong></label>
+<input type="text" name="email" id="ce" value="" title="This is a required field.">
+</p>
+<br />
+<script type="text/javascript">
+<!--
+autojump('areacode', 'prefix', 3);
+autojump('prefix', 'number', 2);
+autojump('number', 'email', 4);
+//-->
+</script>
+
+<p>
+<input name="mail_address" type="button" id="mail_address" onclick="alert('This is a sample form. Activating this button does not change the form or display additional windows. Press ENTER to close this message.')" value="Mailing Address">
+&nbsp;&nbsp;
+<input name="bill_address" type="button" id="bill_address" onclick="alert('This is a sample form. Activating this button does not change the form or display additional windows. Press ENTER to close this message.')" value="Billing Address">
+
+<p><font face="Arial, Helvetica, sans-serif" size="2">* Required fields</font></p>
+
+</fieldset>
+<!-- *************************************************************************************** -->
+
+<br />
+
+<!-- *************************************************************************************** -->
+<fieldset>
+<legend>
+<font face="Arial, Helvetica, sans-serif" size="4" color="#000066">Account Information</font>
+</legend>
+
+<p>
+<label for="on"><strong>Order Number</strong></label>
+<input type="text" name="order_number" id="on" value="357">
+</p>
+
+<p>
+<label for="an"><strong>Account Number</strong></label>
+<input type="text" name="accountnumber" id="an" value="2468">
+</p>
+
+</fieldset>
+
+<!-- *************************************************************************************** -->
+
+<br />
+
+<fieldset>
+<legend>
+<font face="Arial, Helvetica, sans-serif" size="4" color="#000066">Ordered Products</font>
+</legend>
+
+<p>
+<label for="ja">JAWS&reg;</label>
+<input type="checkbox" name="JAWS" id="ja">
+<br />
+
+<label for="fu">Fusion</label>
+<input type="checkbox" name="Fusion" id="fu">
+
+<br />
+<label for="zt">ZoomText</label>
+<input type="checkbox" name="ZoomText" id="zt">
+<br />
+
+</p>
+
+</fieldset>
+<!-- *************************************************************************************** -->
+
+<br />
+
+<!-- *************************************************************************************** -->
+<fieldset>
+<legend>
+<font size="4" face="Arial, Helvetica, sans-serif" color="#000066">
+Product(s) in Warranty
+</font>
+</legend>
+
+<p>
+<input type="radio" checked name="warranty" id="wy" value="yes">
+<label for="wy">Yes</label>
+
+<br />
+
+<input type="radio" name="warranty" id="wn" value="no">
+<label for="wn">No</label>
+</p>
+
+</fieldset>
+<!-- *************************************************************************************** -->
+
+<br />
+
+<!-- *************************************************************************************** -->
+<fieldset>
+<legend>
+<font size="4" face="Arial, Helvetica, sans-serif" color="#000066">
+Current Call
+</font>
+</legend>
+
+<p>
+<label for="ar"><strong>Action Taken</strong></label>
+<select name="action" size="1" id="ar">
+<option value="sale">Sale
+<option value="hardware" selected>Hardware Issue
+<option value="Software">Software Issue
+<option value="Refund">Product Refund
+<option value="Replacement">Replace Product
+</select>
+</p>
+
+<p>
+<Label for="cn2"><strong>Notes</strong></label>
+<br />
+<textarea rows="10" cols="40" id="cn2">
+The customer changed a setting and was recording in fast forward. I showed him how to change the setting back, and showed him where to find related directions in the user's guide.
+</textarea>
+</p>
+
+<p>
+<input name="notes" type="button" id="notes" onclick="alert('This is a sample form. Activating this button does not change the form or display additional windows. Press ENTER to close this message.')" value="Notes History">
+&nbsp;&nbsp;
+<input name="new_order" type="button" id="new_order" onclick="alert('This is a sample form. Activating this button does not change the form or display additional windows. Press ENTER to close this message.')" value="New Order">
+
+</fieldset>
+<!-- *************************************************************************************** -->
+
+<br />
+
+<!-- *************************************************************************************** -->
+<fieldset>
+<legend>
+<font face="Arial, Helvetica, sans-serif" size="4" color="#000066">
+Receive Marketing Promotions by
+</font>
+</legend>
+
+<p>
+<input type="checkbox" name="phone_offers" id="po" contexthelp="We are required by law to honor customer's requests to be removed from our calling list. Notify the customer that it can take 30 to 60 days, and state in the notes field that this has been done.">
+
+<label for="po">Phone</label>
+<br />
+
+<input type="checkbox" name="email_offers" id="eo" checked>
+<label for="eo">E-mail</label>
+<br />
+
+<input type="checkbox" name="mail_offers" id="mo">
+<label for="mo">Mail</label>
+<br />
+
+<input type="checkbox" name="newsletter" id="cn">
+<label for="cn">Company Newsletter</label>
+</p>
+
+</fieldset>
+<!-- *************************************************************************************** -->
+
+<p align="center">
+<input name="Submit" type="button" id="Submit" onclick="alert('This is a sample form. If this were a real form, activating the Submit button would send the requested information and clear the form. Activating this sample button does not change the form or display additional windows. Press ENTER to close this message.')" value="Submit">
+</p>
+
+</td>
+</tr>
+</table>
+</form>
+</body>
+</html>

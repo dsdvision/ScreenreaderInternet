@@ -1,0 +1,649 @@
+<!doctype html>
+<html lang=en>
+<head>
+<meta charset="utf-8">
+<title>Tables with JAWS</title>
+<link rel=stylesheet type="text/css" href="training-dc.css">
+<meta name="keywords" content="navigating web pages, JAWS, tables, table layer, selecting tables, document presentation mode, simple layout, screen layout">
+<meta name="description" content="This web site demonstrates the use of JAWS and Fusion on the Internet.">
+<meta name="Author" content="Freedom Scientific Training Department, a Vispero Brand">
+
+</head>
+
+<body>
+<p>
+<a href="_Surfs_Up_Start_Here.htm">
+<img alt="Surf's Up" src="images/Shark_Fin_50x50_New 009.jpg"></a>
+</p>
+<div id="content" role="main">
+
+<h1>HTML Tables with JAWS</h1>
+
+<p>A Web page author can use tables in two primary ways on the Internet. One is for the layout of structure on a Web page to place items where the author wants them to be in relation to other items on the page. These are called layout tables. The other type of table is called a data table. Data tables are the most common type of table.</p>
+
+<p>JAWS announces when you enter and leave a table. A well-designed HTML table has a few different features. One of these is a caption, which is visible to a sighted user and is also read by JAWS. The caption is usually like a title, and generally appears above the table. Another design feature is the table summary. The table summary is not visible on the screen to sighted users. Web page designers can add summaries to the HTML code specifically for screen reader users. A good table summary provides a meaningful overview of the table, giving you some idea of what the
+  table contains before you get there. Pay particular attention to the table summaries as you read through this page.</p>
+
+<h2>Reading Tables</h2>
+
+<p>You can use the JAWS navigation quick key <strong>T</strong> to move quickly between tables. On this page, each table also has a caption that is a level two heading. You can also move among the headings by pressing the JAWS navigation quick key <strong>H</strong> for headings. If you want to list all tables on the page, press <strong>INSERT+CTRL+T</strong>. You can then select a table and press <strong>ENTER </strong>to move to it.</p>
+
+<p>Once you enter a table, you can use table reading commands to move through and read the information.</p>
+
+<h3>Table Layer Keystrokes</h3>
+
+<p>Table layer keystrokes offer a fast and convenient way to navigate tables. The table layer eliminates the need to have to hold down several keys at once to perform a table navigation command.</p>
+
+<p>Below is a list of the layered keystrokes for table navigation. Press and release <strong>INSERT+SPACEBAR</strong>, followed by <strong>T</strong> to get to the table layer. Then press any of the following keystrokes.</p>
+
+<ul>
+	<li><strong>H</strong> or <strong>QUESTION MARK</strong> (<strong>?</strong>), list the keystrokes you can use in this layer</li>
+	<li><strong>ARROW Keys</strong>, move to cell above, below, left, or right</li>
+	<li><strong>NUM PAD 5</strong>, say current cell</li>
+	<li><strong>HOME</strong>, move to the beginning of the current row</li>
+	<li><strong>END</strong>, move to the end of the current row</li>
+	<li><strong>CTRL+HOME</strong>, move to the first cell in a table</li>
+	<li><strong>CTRL+END</strong>, move to the last cell in a table</li>
+	<li><strong>CONTROL+UP ARROW</strong>, move to the top of the current column</li>
+	<li><strong>CONTROL+DOWN ARROW</strong>, move to the bottom of the current column</li>
+	<li><strong>CONTROL+LEFT ARROW</strong>, move to the beginning of the current row</li>
+	<li><strong>CONTROL+RIGHT ARROW</strong>, move to the end of the current row</li>
+	<li><strong>CONTROL+ENTER</strong>, move to next table</li>
+	<li><strong>CONTROL+SHIFT+ENTER</strong>, move to prior table</li>
+	<li><strong>SHIFT+UP ARROW</strong>, read the current row</li>
+	<li><strong>SHIFT+PAGE UP</strong>, read from the current cell to the end of the row</li>
+	<li><strong>SHIFT+HOME</strong>, read from beginning of the row to the current cell</li>
+	<li><strong>SHIFT+NUM PAD 5</strong>, read the current column</li>
+	<li><strong>SHIFT+PAGE DOWN</strong>, read from the current cell to the bottom of the column</li>
+	<li><strong>SHIFT+END</strong>, read from the top of the column to the current cell</li>
+</ul>
+
+<p>The Table Layer remains active until you press a key that does not perform a table command, such as <strong>ESC</strong>, <strong>SPACEBAR</strong>, <strong>TAB</strong>, or <strong>ENTER</strong>.</p>
+
+<p>The default behavior for JAWS is to read only headers that have been properly marked as headers by the author of a table.</p>
+
+<p>In many tables, the first row, going from left to right, contains headers for the information in the columns below it. Also, many times the first column, going up and down, contains headers for the information in the rows to the right. If a table is not properly coded, JAWS can be changed to treat the information in the first row and the first column as headers. The settings for JAWS are as follows:
+
+<ul>
+	<li>Only Marked Headers (default)</li>
+	<li>Off</li>
+	<li>Row</li>
+	<li>Column</li>
+	<li>Both Row and Column</li>
+</ul>
+
+<p>If a table has been properly marked up with column and row headers, when moving left and right in a table, you would hear the item in each column at the top of the column and then the contents of the current cell. When moving up and down in a table, you hear the item at the beginning of each row and then the contents of the current cell.</p>
+
+<p>JAWS looks at the HTML code to see if the author of an HTML table has coded the table cell with a &lt;TH&gt; element, or table header. In addition, JAWS looks for the scope attribute, which can also be used by document authors to provide header information in tables. If a table is not specifically coded with proper column and row headers, JAWS can be changed to treat the table as if it did.</strong></p>
+
+<p>In the first two tables below you find examples of column and row headers that are marked up as headers. The first table has properly coded &lt;TH&gt; table header tags for both the first row and the first column. However, the second table only has properly coded &lt;TH&gt; table header tags for the first row. There are no row headers in the second table example. However, because these first two tables are marked up properly, JAWS reads the header information just fine.</p>
+
+<p>In this first table the author used table headers for both the first row and the first column of the table, so when you use JAWS reading commands to read the current cell, you hear the following information:</p>
+<ul>
+	<li>Column and row position in the table</li>
+	<li>Column header (time)</li>
+	<li>Row header (network)</li>
+	<li>TV show listing from the cell where the cursor currently is located</li>
+</ul>
+
+<p class="note"><strong>NOTE:</strong> If you are not in table layer mode, press and release <strong>INSERT+SPACEBAR</strong>, and then press <strong>T</strong>. Then press <strong>NUM PAD 5</strong> to read the current cell.</p>
+
+<table align="center" border=1 cellpadding="5" cellspacing="1" summary = "A table that has the name of the network down the left side and the show times across the top. This is table one.">
+
+<caption>
+<h2>TV Listings with Both Column and Row Headers</h2>
+</caption>
+
+<tr>
+<td  style="width: 22%;"></td>
+<th  style="width: 12%;" scope="col">8:00 PM</th>
+<th  style="width: 12%;" scope="col">8:30 PM</th>
+<th  style="width: 12%;" scope="col">9:00 PM</th>
+<th  style="width: 12%;" scope="col">9:30 PM</th>
+<th  style="width: 12%;" scope="col">10:00 PM</th>
+<th  style="width: 12%;" scope="col">10:30 PM</th>
+</tr>
+
+<tr>
+<th  scope="row" style="width: 22%;">ABC</th>
+<td  style="width: 12%;" colspan="2">Grey's Anatomy</td>
+<td  style="width: 12%;" colspan="2">Scandal</td>
+<td  style="width: 12%;" colspan="2">How to Get Away with Murder</td>
+</tr>
+
+<tr>
+<th scope="row" style="width: 22%;">CBS</th>
+<td  style="width: 12%;">The Big Bang Theory</td>
+<td  style="width: 12%;">Mom</td>
+<td  style="width: 12%;">Two and a Half Men</td>
+<td  style="width: 12%;">The McCarthys</td>
+<td  style="width: 12%;" colspan="2">Elementary</td>
+</tr>
+
+<tr>
+<th scope="row" style="width: 22%;">FOX</th>
+<td  style="width: 12%;" colspan="2">Bones</td>
+<td  style="width: 12%;" colspan="2">Gracepoint</td>
+<td  style="width: 12%;" colspan="2">Local Programming</td>
+</tr>
+
+<tr>
+<th scope="row" style="width: 22%;">NBC</th>
+<td  style="width: 12%;" colspan="2">The Biggest Loser</td>
+<td  style="width: 12%;">Bad Judge</td>
+<td  style="width: 12%;">A to Z</td>
+<td  style="width: 12%;" colspan="2">Parenthood</td>
+</tr>
+
+</table>
+<br /><br />
+
+<p>In the second table the author used table headers for only the first row. The station network names  have been omitted from column one. In this case when you use JAWS reading commands to read the current cell you hear the following information:</p>
+<ul>
+	<li>Column and row position in the table</li>
+	<li>Column header (time)</li>
+	<li>TV show listing from the cell where the cursor currently is located</li>
+</ul>
+
+<table align="center" border=1 cellpadding="5" cellspacing="1" summary = "A table that has the show times across the top but no row headers. This is table two.">
+
+<caption>
+<h2>TV Listings with Only Column Headers</h2>
+</caption>
+
+
+<tr>
+<th  style="width: 12%;" scope="col">8:00 PM</th>
+<th  style="width: 12%;" scope="col">8:30 PM</th>
+<th  style="width: 12%;" scope="col">9:00 PM</th>
+<th  style="width: 12%;" scope="col">9:30 PM</th>
+<th  style="width: 12%;" scope="col">10:00 PM</th>
+<th  style="width: 12%;" scope="col">10:30 PM</th>
+</tr>
+
+<tr>
+<td  style="width: 12%;" colspan="2">Grey's Anatomy</td>
+<td  style="width: 12%;" colspan="2">Scandal</td>
+<td  style="width: 12%;" colspan="2">How to Get Away with Murder</td>
+</tr>
+
+<tr>
+<td  style="width: 12%;">The Big Bang Theory</td>
+<td  style="width: 12%;">Mom</td>
+<td  style="width: 12%;">Two and a Half Men</td>
+<td  style="width: 12%;">The McCarthys</td>
+<td  style="width: 12%;" colspan="2">Elementary</td>
+</tr>
+
+<tr>
+<td  style="width: 12%;" colspan="2">Bones</td>
+<td  style="width: 12%;" colspan="2">American Idol</td>
+<td  style="width: 12%;" colspan="2">Fox 5 News at 10</td>
+</tr>
+
+<tr>
+<td  style="width: 12%;" colspan="2">The Biggest Loser</td>
+<td  style="width: 12%;">Bad Judge</td>
+<td  style="width: 12%;">A to Z</td>
+<td  style="width: 12%;" colspan="2">Parenthood</td>
+</tr>
+
+</table>
+<br /><br />
+
+<p>The third table is just like the first table, except the author did <strong>NOT</strong> use table headers to mark up the HTML. In this case, you can change JAWS to read them.</p>
+<br /><br />
+
+<table align="center" border=1 cellpadding="5" cellspacing="1" summary = "A table that has the name of the network down the left side and the show times across the top. This table is not marked up with table header data. This is table three.">
+
+<caption>
+<h2>TV Listings with Column and Row Headers that are not Marked up Properly</h2>
+</caption>
+
+<tr>
+<td  style="width: 22%;"></td>
+<td  style="width: 12%;">8:00 PM</td>
+<td  style="width: 12%;">8:30 PM</td>
+<td  style="width: 12%;">9:00 PM</td>
+<td  style="width: 12%;">9:30 PM</td>
+<td  style="width: 12%;">10:00 PM</td>
+<td  style="width: 12%;">10:30 PM</td>
+</tr>
+
+<tr>
+<td  style="width: 22%;">ABC</td>
+<td  style="width: 12%;" colspan="2">Grey's Anatomy</td>
+<td  style="width: 12%;" colspan="2">Scandal</td>
+<td  style="width: 12%;" colspan="2">How to Get Away with Murder</td>
+</tr>
+
+<tr>
+<td style="width: 22%;">CBS</td>
+<td  style="width: 12%;">The Big Bang Theory</td>
+<td  style="width: 12%;">Mom</td>
+<td  style="width: 12%;">Two and a Half Men</td>
+<td  style="width: 12%;">The McCarthys</td>
+<td  style="width: 12%;" colspan="2">Elementary</td>
+</tr>
+
+<tr>
+<td style="width: 22%;">FOX</td>
+<td  style="width: 12%;" colspan="2">Bones</td>
+<td  style="width: 12%;" colspan="2">Gracepoint</td>
+<td  style="width: 12%;" colspan="2">Local Programming</td>
+</tr>
+
+<tr>
+<td style="width: 22%;">NBC</td>
+<td  style="width: 12%;" colspan="2">The Biggest Loser</td>
+<td  style="width: 12%;">Bad Judge</td>
+<td  style="width: 12%;">A to Z</td>
+<td  style="width: 12%;" colspan="2">Parenthood</td>
+</tr>
+
+</table>
+<br /><br />
+
+<p class="exercise"><strong>EXERCISE:</strong> Follow the steps below to tell JAWS to read both column and row headers for the table above that does not have proper markup:</p>
+
+<ol>
+	<li>Press <strong>INSERT+V</strong> to open the JAWS Quick Settings dialog box while the Tables page is still in the foreground. The Quick Settings dialog box opens with focus in the search edit box.</li>
+	<li>Type <strong>table titles</strong> in the edit box. The tree view below filters out all items not related to table titles.</li>
+	<li>Press <strong>DOWN ARROW</strong> to move to the item Table Titles in the tree view. You should hear JAWS announce "Only Marked Headers."</li>
+	<li>Press <strong>SPACEBAR</strong> to change this to <strong>Table Titles - Both Row and Column</strong></li>
+	<li>Press <strong>TAB</strong> to move to the OK button, and then activate it with the <strong>SPACEBAR</strong>. The Quick Settings dialog box closes.</li>
+	<li>Navigate to the table above and try reading it again. You can press <strong>SHIFT+T</strong> to move to the prior table. Does it make more sense this time?</li>
+	<li>Set the Quick Settings back to <strong>Table Titles Announce - Only Marked Headers</strong> again when you are finished.</li>
+</ol>
+
+<p>The fourth table has only the times listed across the top. The network names that were in the first column have been removed. Again, the author did <strong>NOT</strong> use table headers to mark up the HTML. When you read the current cell you hear only the following information:</p>
+
+<ul>
+	<li>Column and row position in the table</li>
+	<li>TV show listing from the current cell</li>
+</ul>
+
+<p>Because the table is not marked up properly, JAWS does not read the column headers.</p>
+<br /><br />
+
+<table align="center" border=1 cellpadding="5" cellspacing="1" summary = "A table that has the show times across the top but no row headers. This table is not marked up with table header data. This is table four.">
+
+<caption>
+<h2>TV Listings with Only Column Headers that are not Marked Up Properly</h2>
+</caption>
+
+
+<tr>
+<td  style="width: 12%;">8:00 PM</td>
+<td  style="width: 12%;">8:30 PM</td>
+<td  style="width: 12%;">9:00 PM</td>
+<td  style="width: 12%;">9:30 PM</td>
+<td  style="width: 12%;">10:00 PM</td>
+<td  style="width: 12%;">10:30 PM</td>
+</tr>
+
+<tr>
+<td  style="width: 12%;" colspan="2">Grey's Anatomy</td>
+<td  style="width: 12%;" colspan="2">Scandal</td>
+<td  style="width: 12%;" colspan="2">How to Get Away with Murder</td>
+</tr>
+
+<tr>
+<td  style="width: 12%;">The Big Bang Theory</td>
+<td  style="width: 12%;">Mom</td>
+<td  style="width: 12%;">Two and a Half Men</td>
+<td  style="width: 12%;">The McCarthys</td>
+<td  style="width: 12%;" colspan="2">Elementary</td>
+</tr>
+
+<tr>
+<td  style="width: 12%;" colspan="2">Bones</td>
+<td  style="width: 12%;" colspan="2">Gracepoint</td>
+<td  style="width: 12%;" colspan="2">Local Programming</td>
+</tr>
+
+<tr>
+<td  style="width: 12%;" colspan="2">The Biggest Loser</td>
+<td  style="width: 12%;">Bad Judge</td>
+<td  style="width: 12%;">A to Z</td>
+<td  style="width: 12%;" colspan="2">Parenthood</td>
+</tr>
+
+</table>
+<br /><br />
+
+<p>When you encounter this type of table you can change how JAWS reads column and row headers. In this case, you know that the information in row one, at the top of each column, is header information, even though it is not properly marked up. You also know that you do <strong>NOT</strong> want to have the first column treated as row headers.</p>
+
+<p class="exercise"><strong>EXERCISE:</strong> Follow the steps below to tell JAWS to read only column headers for the table above that does not have proper markup:</p>
+
+<ol>
+
+	<li>Press <strong>INSERT+V</strong> to open the JAWS Quick Settings dialog box while the Tables page is still in the foreground. The Quick Settings dialog box opens with focus in the search edit box.</li>
+	<li>Type <strong>table titles</strong> in the edit box. The tree view below filters out all items not related to table titles.</li>
+	<li>Press <strong>DOWN ARROW</strong> to move to the item Table Titles in the tree view. You should hear JAWS announce "Only Marked Headers."</li>
+	<li>Press <strong>SPACEBAR</strong> to change this to <strong>Table Titles - Columns</strong></li>
+	<li>Press <strong>TAB</strong> to move to the OK button, and then activate it with the <strong>SPACEBAR</strong>. The Quick Settings dialog box closes.</li>
+	<li>Navigate to the table above and try reading it again.  You can press <strong>SHIFT+T</strong> to move to the prior table. Does it make more sense this time?</li>
+	<li>Set the JAWS Quick Settings Option back to <strong>Table Titles Announce - Only Marked Headers</strong> again when you are finished.</li>
+</ol>
+
+<h2>Document Presentation Mode</h2>
+
+<p>There are two different document presentation modes that you can use when reading tables with JAWS: Simple Layout and Screen Layout. With Simple Layout, each cell of the table is displayed on a separate line in the virtual buffer. Screen Layout mode allows you to read tables by row, just as they are presented on the screen. With Screen Layout each row of the table is displayed on a separate line and each cell is separated by a vertical bar. This lets you get a much better idea about how the table is structured and how different cells in a row relate to each other.</p>
+
+<p>Screen Layout mode is also helpful when you want to copy an entire table row and paste it into another document as a single line. The default document presentation mode for JAWS is Simple Layout.</p>
+
+<h3>To enable Screen Layout mode  for the current web browser, do the following:</h3>
+
+<ol>
+  <li>In your browser, press <strong>INSERT+V</strong>. The Quick Settings dialog box opens with focus in the search edit box.</li>
+	<li>Type <strong>document presentation</strong> in the search edit box. The tree view below filters out everything that does not relate to document presentation.</li>
+ 	<li>Press <strong>DOWN ARROW</strong> until focus moves to Document Presentation Mode.</li>
+ <li>Press the <strong>SPACEBAR</strong> to choose Screen Layout.</li>
+  <li>Press <strong>TAB</strong> to move to the OK button, and then <strong>SPACEBAR</strong> to activate it.</li>
+</ol>
+
+<p class="note"><strong>NOTE:</strong> By default, the quick settings for JAWS are saved to your computer hard disk, and remain set this way until you change them back or to a different setting.</p>
+
+<p>When you practice reading tables with JAWS in the following section, experiment with Screen Layout mode and Simple Layout mode to see which you like best.</p>
+
+<h3>Permanently Enable Screen Layout Mode for all HTML and PDF Tables</h3>
+
+<p>If you determine that Screen Layout mode is better suited to your needs, you can do the following to permanently enable this feature in HTML and PDF tables.</p>
+
+<ol>
+  <li>In your browser, press <strong>INSERT+F2</strong>.</li>
+  <li>Select Settings Center and press <strong>ENTER</strong>.</li>
+	<li>Press <strong>CTRL+SHIFT+D</strong> to switch to the Default, all files, setting. You can read the title bar of Settings Center to verify this by pressing <strong>INSERT+T</strong>.</li>
+<li>Focus is in the Search edit box. Type in "select layout" without the quotes.</li>
+	<li>Press <strong>DOWN ARROW</strong> to move to Select Layout in the filtered results of the tree view in Settings Center.</li>
+	<li>Press <strong>SPACEBAR</strong> to toggle from Simple Layout to Screen Layout.</li>
+	<li>Press <strong>TAB</strong> to move to the OK button, and then activate it with the <strong>SPACEBAR</strong>. The changes are made and saved. Settings Center closes.</li>
+</ol>
+
+<h2>Practice with More Tables</h2>
+
+<p>The next table on this page discusses air and water temperatures for the Tampa Bay area. The Tampa Bay area enjoys an average of 361 days of sunshine a year. The Guinness Book of World records credits Saint Petersburg with the longest run of consecutive sunny days: 768. All the sunshine makes it easy to enjoy the area's beaches, which include two of the top ten rated beaches in the nation.</p>
+
+<table align="center" border=1 cellpadding="5" cellspacing="1" summary = "A table that has the average high temperature, low temperature, and gulf water temperature across the top and the months of the year down the left hand side for the Saint Petersburg area.">
+<br />
+
+<caption>
+<h2>Average Temperatures for Saint Petersburg</h2>
+</caption>
+
+<tr>
+	<th style="width: 25%;" scope="col">Month</th>
+	<th style="width: 25%;" scope="col">High Air Temperature</th>
+	<th style="width: 25%;" scope="col">Low Air Temperature</th>
+	<th style="width: 25%;" scope="col">Gulf Water Temperature</th>
+  </tr>
+  <tr>
+	<th scope="row" style="width: 25%;">January</th>
+	<td style="width: 25%;">70 degrees</td>
+	<td style="width: 25%;">50 degrees</td>
+	<td style="width: 25%;">64 degrees</td>
+  </tr>
+  <tr>
+	<th scope="row" style="width: 25%;">February</th>
+	<td style="width: 25%;">71 degrees</td>
+	<td style="width: 25%;">51 degrees</td>
+	<td style="width: 25%;">65 degrees</td>
+  </tr>
+  <tr>
+	<th scope="row" style="width: 25%;">March</th>
+	<td style="width: 25%;">77 degrees</td>
+	<td style="width: 25%;">58 degrees</td>
+	<td style="width: 25%;">69 degrees</td>
+  </tr>
+  <tr>
+	<th scope="row" style="width: 25%;">April</th>
+	<td style="width: 25%;">81 degrees</td>
+	<td style="width: 25%;">61 degrees</td>
+	<td style="width: 25%;">73 degrees</td>
+  </tr>
+  <tr>
+	<th scope="row" style="width: 25%;">May</th>
+	<td style="width: 25%;">88 degrees</td>
+	<td style="width: 25%;">67 degrees</td>
+	<td style="width: 25%;">79 degrees</td>
+  </tr>
+  <tr>
+	<th scope="row" style="width: 25%;">June</th>
+	<td style="width: 25%;">89 degrees</td>
+	<td style="width: 25%;">71 degrees</td>
+	<td style="width: 25%;">82 degrees</td>
+  </tr>
+  <tr>
+	<th scope="row" style="width: 25%;">July</th>
+	<td style="width: 25%;">90 degrees</td>
+	<td style="width: 25%;">75 degrees</td>
+	<td style="width: 25%;">84 degrees</td>
+  </tr>
+  <tr>
+	<th scope="row" style="width: 25%;">August</th>
+	<td style="width: 25%;">90 degrees</td>
+	<td style="width: 25%;">75 degrees</td>
+	<td style="width: 25%;">86 degrees</td>
+  </tr>
+  <tr>
+	<th scope="row" style="width: 25%;">September</th>
+	<td style="width: 25%;">89 degrees</td>
+	<td style="width: 25%;">73 degrees</td>
+	<td style="width: 25%;">82 degrees</td>
+  </tr>
+  <tr>
+	<th scope="row" style="width: 25%;">October</th>
+	<td style="width: 25%;">82 degrees</td>
+	<td style="width: 25%;">65 degrees</td>
+	<td style="width: 25%;">78 degrees</td>
+  </tr>
+  <tr>
+	<th scope="row" style="width: 25%;">November</th>
+	<td style="width: 25%;">78 degrees</td>
+	<td style="width: 25%;">56 degrees</td>
+	<td style="width: 25%;">71 degrees</td>
+  </tr>
+  <tr>
+	<th scope="row" style="width: 25%;">December</th>
+	<td style="width: 25%;">72 degrees</td>
+	<td style="width: 25%;">50 degrees</td>
+	<td style="width: 25%;">64 degrees</td>
+  </tr>
+</table>
+ <br /><br />
+
+<p>The information above is taken from the Chamber of Commerce Web site in SaintPetersburg.</p>
+
+<p class="exercise"><strong>EXERCISE:</strong> Try re-reading the previous table using Screen Layout mode instead of Simple Layout mode. If you need a reminder about how to switch document presentation modes, see the <a href="Screen_Layout.htm" target="_blank">steps for switching to Screen Layout mode</a>. When you are finished, change JAWS back to Simple Layout mode.</p>
+
+
+<p>Surf's Up also makes use of cascading style sheets (CSS) for formatting purposes. Using CSS is a best practice technique for Web designers and is the best way to accomplish formatting. One of the formatting techniques used in Surf's Up is to have cells that are classified as table header elements colored with a lemon yellow background, which is darker than the ivory background of the other table cells.</p>
+
+<p>The table below is an example of a table that uses the ID, AXIS, and HEADERS attributes to make JAWS speak different information when navigating different areas of the table. For example, when moving up and down the Employee Name column, you hear the division name as the row header. However, when moving up and down the Phone Extension column, you hear the employee name as the row header. The employee name is actually in column two, but the HTML code is telling JAWS to treat it as the row header in this case, rather than the text in column one. In this case, JAWS reads properly without you having to change any settings for JAWS, since the author of the table took the time to use good practices for coding the HTML of the table. Any given cell can reference any other cell (or cells) anywhere in the table as a header using this technique.</p>
+<br />
+
+<table align="center" border=1 cellpadding="5" cellspacing="1" summary = "A table that has the employee's division in the first column, the employee's name in the second column, and the employee's phone extension in the last column.">
+
+  <caption>
+  <h3>Employee Extensions and Departments</h3>
+  </caption>
+  <tr>
+	<th scope="col">Division Name</th>
+	<th scope="col">Employee Name</th>
+	<th scope="col">Phone Extension</th>
+  </tr>
+
+<tr>
+	<td id="d1" axis="department">Shipping</td>
+	<td headers=d1 id="empl1">John Smith</td>
+	<td headers="empl1">543</td>
+</tr>
+
+<tr>
+	<td id="d2" axis="department">Receiving</td>
+	<td headers=d2 id="empl2">Lee Johnson</td>
+	<td headers="empl2">123</td>
+</tr>
+
+  <tr>
+	<td id="d3" axis="department">Accounting</td>
+	<td headers=d3 id="empl3">Sharon Jones</td>
+	<td headers="empl3">222</td>
+  </tr>
+</table>
+<br />
+<br />
+
+<p>This next table is much more complex, but notice how JAWS reads it. When moving up and down column two, where the company name is, the row header information is gathered from column one, the region. When moving up or down any column from three to eight, the row header information is gathered from column two, the company name. You also hear the axis attribute spoken with the words "Region" and "Where."</p>
+<br />
+
+<table align="center" border="1" cellpadding="3" cellspacing="1" summary="Listing of sales contacts by state. The region is in column one and the company name is in column two. More information about each company is located in columns 3 through 8.">
+
+  <caption>
+  <H3>Sales Contacts by State</H3>
+  </caption>
+  <tr valign="top">
+	<th style="width: 10%;" scope="col">&nbsp;</th>
+	<th style="width: 15%;" scope="col" id="c1" axis="Who">Company</th>
+	<th style="width: 15%;" scope="col" id="c2" axis="Where">Address</th>
+	<th style="width: 10%;" scope="col" id="c3" axis="Where">City</th>
+	<th style="width: 5%;" scope="col" id="c4" axis="Where">State</th>
+	<th style="width: 10%;" scope="col" id="c5" axis="To contact us">Phone Number</th>
+	<th style="width: 10%;" scope="col" id="c7" axis="To contact us">Fax</th>
+	<th style="width: 25%;" scope="col" id="c9" axis="What">Products</th>
+  </tr>
+
+  <tr valign="top">
+	<th style="width: 10%;" id="s1" rowspan="4" axis="Region" scope="row"> West </th>
+	<th style="width: 15%;" id="r1" headers="c1 s1" scope="row"> Screen Readers Unlimited</th>
+	<td style="width: 15%;" headers="c2 r1"> 52 Third Ave. </td>
+	<td style="width: 10%;" headers="c3 r1"> Los Angeles </td>
+	<td style="width: 5%;" headers="c4 r1"> CA </td>
+	<td style="width: 10%;" headers="c5 r1"> 555-555-1234 </td>
+	<td style="width: 10%;" headers="c7 r1"> 949-555-0101 </td>
+	<td style="width: 25%;" headers="c9 r1"> Screen Readers </td>
+  </tr>
+  <tr valign="top">
+	<th style="width: 15%;" id="r2" headers="c1 s1"> Access Now </th>
+	<td style="width: 15%;" headers="c2 r2"> 115 Webb Street </td>
+	<td style="width: 10%;" headers="c3 r2"> Seattle </td>
+	<td style="width: 5%;" headers="c4 r2"> WA </td>
+	<td style="width: 10%;" headers="c5 r2"> 206-555-7777 </td>
+	<td style="width: 10%;" headers="c7 r2"> 206-555-7778 </td>
+	<td style="width: 25%;" headers="c9 r2"> Software; Braille Displays; Embossers;
+		Notetakers </td>
+  </tr>
+  <tr valign="top">
+	<th style="width: 15%;" id="r3" headers="c1 s1"> Webb Access Group </th>
+	<td style="width: 15%;" headers="c2 r3"> 100 Main Street </td>
+	<td style="width: 10%;" headers="c3 r3"> Phoenix </td>
+	<td style="width: 5%;" headers="c4 r3"> AZ </td>
+	<td style="width: 10%;" headers="c5 r3"> 602-555-3131 </td>
+	<td style="width: 10%;" headers="c7 r3"> 602-555-3132 </td>
+	<td style="width: 25%;" headers="c9 r3"> Software; Web Accessibility Consulting
+	  </td>
+  </tr>
+  <tr valign="top">
+	<th style="width: 15%;" id="r4" headers="c1 s1"> Accessible World </th>
+	<td style="width: 15%;" headers="c2 r4"> 5 N. 7th Street </td>
+	<td style="width: 10%;" headers="c3 r4"> San Francisco </td>
+	<td style="width: 5%;" headers="c4 r4"> CA </td>
+	<td style="width: 10%;" headers="c5 r4"> 1-800-555-2190 </td>
+	<td style="width: 10%;" headers="c7 r4">&nbsp; </td>
+	<td style="width: 25%;" headers="c9 r4"> Software; Braille Displays; Embossers;
+		Notetakers </td>
+  </tr>
+  <tr valign="top">
+	<th style="width: 10%;" id="s2" headers="c0" rowspan="3" axis="Region"> Midwest
+	  </th>
+	<th style="width: 15%;" id="r5" headers="c1 s2"> Special Computers, Inc.
+	  </th>
+	<td style="width: 15%;" headers="c2 r5"> 121 4th Street, Suite I </td>
+	<td style="width: 10%;" headers="c3 r5"> Chicago </td>
+	<td style="width: 5%;" headers="c4 r5"> IL </td>
+	<td style="width: 10%;" headers="c5  r5"> 800-555-1478 </td>
+	<td style="width: 10%;" headers="c7  r5"> 708-555-2221 </td>
+	<td style="width: 25%;" headers="c9  r5"> Software; Braille Displays; Embossers;
+		Notetakers </td>
+  </tr>
+  <tr valign="top">
+	<th style="width: 15%;" id="r6" headers="c1 s2"> IndyPendence Day Computing
+	  </th>
+	<td style="width: 15%;" headers="c2 r6"> 2110 Freedom Dr. </td>
+	<td style="width: 10%;" headers="c3 r6"> Indianapolis </td>
+	<td style="width: 5%;" headers="c4 r6"> IN </td>
+	<td style="width: 10%;" headers="c5 r6"> 1-800-555-1332 </td>
+	<td style="width: 10%;" headers="c7 r6"> 317-555-6261 </td>
+	<td style="width: 25%;" headers="c9 r6"> Software; Braille Displays; Embossers;
+		Notetakers </td>
+  </tr>
+  <tr valign="top">
+	<th style="width: 15%;" id="r7" headers="c1 s2"> Touch the World, Inc.
+	  </th>
+	<td style="width: 15%;" headers="c2 r7"> 82 S. Broadway </td>
+	<td style="width: 10%;" headers="c3 r7"> Cincinnati </td>
+	<td style="width: 5%;" headers="c4 r7"> OH </td>
+	<td style="width: 10%;" headers="c5 r7"> 1-800-555-3691 </td>
+	<td style="width: 10%;" headers="c7 r7"> 513-555-2221 </td>
+	<td style="width: 25%;" headers="c9 r7"> Software; Braille Displays; Embossers;
+		Notetakers </td>
+  </tr>
+</table>
+<br /><br />
+
+<p>In the following table, the first row actually spans the entire width of the table, across all five columns. JAWS uses the COLSPAN and SCOPE attributes to determine how it should read the information in the table. Try reading this table now.</p>
+
+<table align="center" summary = "The first row spans all five columns. The weeks of the month are in row two and are column headers for the row below. The produce on sale for each week is listed in the third and subsequent rows." border="1" cellpadding="5" cellspacing="1">
+
+  <caption>
+  <h2>Sales Report</h2>
+  </caption>
+
+  <tr>
+    <th colspan="5" scope="col">Produce On Sale</th>
+  </tr>
+  <tr>
+    <th>&nbsp;</th>
+    <th scope="col">First Week</th>
+    <th scope="col">Second Week</th>
+    <th scope="col">Third Week</th>
+    <th scope="col">Fourth Week</th>
+  </tr>
+  <tr>
+    <th scope="row"><strong>January</strong></th>
+    <td>Apples</td>
+    <td>Pears</td>
+    <td>Oranges</td>
+    <td>Grapes</td>
+  <tr>
+    <th scope="row">February</th>
+    <td>Mangos</td>
+    <td>Tangerines</td>
+    <td>Strawberries</td>
+    <td>Kiwis</td>
+  <tr>
+    <th scope="row">March</th>
+    <td>Cherries</td>
+    <td>Limes</td>
+    <td>Lemons</td>
+    <td>Melons</td>
+</table>
+<br /><br />
+
+</div>
+
+<div id="footer" role="contentinfo">
+<p class="footHR"></p>
+<p align="center">
+<a href= "
+Web_Verbosity.htm
+" accesskey="b"><strong>Back</strong></a>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="
+Forms.htm
+" accesskey="n"><strong>Next</strong></a>
+</p>
+</div>
+</body>
+</html>

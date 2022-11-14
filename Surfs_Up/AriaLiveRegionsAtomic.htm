@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang=en>
+<head>
+<meta charset="utf-8">
+<title>Aria Live Regions - Atomic</title>
+<link rel=stylesheet type="text/css" href="training-dc.css">
+<meta name="keywords" content="navigating web pages, JAWS, ARIA, live regions, live regions atomic">
+<meta name="description" content="This web site demonstrates the use of JAWS and Fusion on the Internet.">
+<meta name="Author" content="Freedom Scientific Training Department, a Vispero Brand">
+
+<!--
+Reference Charles Chen's work at
+http://accessibleajax.clcworld.net/simple/atomic_true.htm -->
+
+<script type="text/javascript">
+window.onload = runExample;
+var minimumTime = 10000;
+var index=0;
+var lrID = "LiveRegion2";
+var messagesArray = new Array("3",
+"4",
+"5",
+"6",
+"7",
+"8",
+"9",
+"10",
+"11",
+"12");
+
+function updateLiveRegion(liveRegionID, textString){
+  textNode = document.createTextNode(textString);
+        targetNode = document.getElementById(liveRegionID);
+        while (targetNode.firstChild) {
+           targetNode.removeChild(targetNode.firstChild);
+           }
+  targetNode.appendChild(textNode);
+        }
+
+function runExample(){
+   updateLiveRegion(lrID, messagesArray[index++]);
+   if (index > 9){
+      index=0;
+      }
+   window.setTimeout(runExample, minimumTime);
+   }
+
+function setMinimumTime(){
+   minimumTimeStr = document.getElementById("throttle").options[document.getElementById("throttle").selectedIndex].text;
+   minimumTime = minimumTimeStr * 5000;
+   }
+</script>
+
+
+
+<noscript>This page uses JavaScript. Your browser either doesn't support JavaScript or you have it turned off. To see this page as it is meant to appear please use a JavaScript enabled browser.</noscript>
+
+</head>
+<body>
+			<!-- dc html head info -->
+<p>
+<a href="_Surfs_Up_Start_Here.htm">
+<img alt="Surf's Up" src="images/Shark_Fin_50x50_New 009.jpg"></a>
+</p>
+<div id="content" role="main">
+
+<h1>ARIA Live Regions - Atomic</h1>
+
+
+<p>In this example, the ARIA live region contains some static text; that is, text that does not change, as well as text that does change. We present two fictitious baseball game scores. To keep it simple, only one of the scores will change, while the rest of the text remains the same. However, if all you heard was the number of the score itself, it would be difficult to tell which team had scored. The score for the Tampa Bay Rays is the score that changes on this page. It is set to update every ten (10) seconds. You do not need to move to the area where the text is changing. JAWS will read it for you once you have paused whatever you are doing.</p>
+
+<hr>
+
+<p>
+<span id="LiveRegion1" aria-live="polite" aria-atomic="true">
+<span id="teams">Tampa Bay Rays:
+<span id="LiveRegion2"></span>
+<br />
+Boston Red Sox:&nbsp;&nbsp; 5
+</span>
+
+
+</span>
+</p>
+
+<hr>
+
+<p>The text just above this paragraph is the region that is set to change. In this example, only the score for the Tampa Bay Rays changes on this screen.</p>
+
+<p>Thanks to Charles Chen for allowing us to use the JavaScript found in these examples of ARIA.</p>
+</div>
+
+<div id="footer" role="contentinfo">
+<p class="footHR"></p>
+<p align="center">
+<a href= "
+AriaLiveRegions.htm
+" accesskey="b"><strong>Back</strong></a>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="
+Closing.htm
+" accesskey="n"><strong>Next</strong></a>
+</p>
+</div>
+
+</body>
+</html>

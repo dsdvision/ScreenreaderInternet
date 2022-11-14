@@ -1,0 +1,531 @@
+body {
+	font-face: Arial, Helvetica, sans-serif;
+	font-size: 13pt;
+	margin-left:2em;
+	margin-right:2em;
+}
+
+fieldset {
+	border-color: purple;
+}
+
+.block {
+	font-face: Arial, Helvetica, sans-serif;
+	font-size: 13pt;
+	background-color: #99FFFF;
+	margin-left: 25px;
+	margin-right: 75px
+}
+
+p {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13pt;
+	margin-top: 10px;
+	margin-bottom: 5px
+}
+
+h1 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 24pt;
+	color: #666666;
+	border-bottom-width: thin;
+	border-bottom-style: solid;
+	text-align: left;
+}
+
+h2 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 19pt;
+}
+
+h3 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 15pt;
+	font-weight: bold;
+}
+
+h4 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13pt;
+	font-weight: bold;
+}
+
+h5 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11pt;
+	font-weight: bold;
+}
+
+
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 50%;
+}
+
+
+/* 
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+}
+*/
+
+/* Clear floats after the columns */
+/*
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+*/
+
+
+.script {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11pt;
+	margin-left: 40px;
+	margin-right: 40px;
+	padding: 5px 5px 5px 40px;
+	font-weight: bold;
+}
+
+li {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13pt;
+	padding-bottom: 3pt;
+}
+
+.note {
+	background-color: #FFFFCC;
+	border: thin solid #000000;
+	padding: 5px 5px 5px 65px;
+ 	text-indent: -55px; 
+	margin-right: 40px;
+	margin-left: 40px;
+	margin-top: 16px;
+	margin-bottom: 16px;
+}
+
+.footHR {
+	background-color: #EB984E;
+	border: thin solid #000000;
+	padding: 5px 5px 5px 65px;
+ 	text-indent: -55px; 
+	margin-top: 16px;
+	margin-bottom: 16px;
+}
+
+.exercise {
+	background-color: #FFEFD5;    
+	border: thin solid #000000;
+	padding: 5px 5px 5px 100px;
+	text-indent: -95px;
+	margin-right: 40px;
+	margin-left: 40px;
+	margin-top: 16px;
+	margin-bottom: 16px;
+}
+
+.tip {
+	background-color: #FFFFCC;
+	border: thin solid #000000;
+	padding: 5px 5px 5px 40px;
+	text-indent: -35px;
+	margin-right: 40px;
+	margin-left: 40px;
+	margin-top: 16px;
+	margin-bottom: 16px;
+}
+
+.tipM {
+	background-color: #9CCFFF;
+	border: thin solid #000000;
+	padding: 5px 5px 5px 97px;
+	text-indent: -87px;
+	margin-right: 40px;
+	margin-left: 40px;
+	margin-top: 16px;
+	margin-bottom: 16px;
+}
+
+.tipJ {
+	background-color: #fbe6c1;
+	border: thin solid #000000;
+	padding: 5px 5px 5px 97px;
+	text-indent: -87px;    
+	margin-right: 40px;
+	margin-left: 40px;
+	margin-top: 16px;
+	margin-bottom: 16px;
+}
+
+.copyr {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	margin-top: 10px;
+	margin-bottom: 5px
+}
+
+img {
+	margin-left:1cm;
+}
+
+table {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13pt;
+	border-width: 2px;
+	width: 80%;
+ 	padding: 5px;
+	border-style: inset;
+	border-color: gray;
+	margin-left:1cm;
+}
+
+td {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13pt;
+	border-width: 1px;
+	width: 50%;
+	padding: 5px;
+	border-style: inset;
+	border-color: gray;
+	background-color: #FFFFF0;
+}
+
+th {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13pt;
+	border-width: 1px;
+	width: 50%;
+	padding: 5px;
+	border-style: inset;
+	border-color: gray;
+	background-color: #FFFFCC;
+	-moz-border-radius: ;
+}
+
+span.highlightYellow {
+	background-color: #FFFF99
+}
+
+span.highlightWhite {
+	background-color: white
+}
+
+
+span.highlightBlue {
+	background-color: #99FFFF
+}
+
+span.highlightGreen {
+	background-color:lightgreen
+}
+
+span.highlightRose {
+	background-color:#FFE4E1
+}
+
+span.highlightMoccasin {
+	background-color:#FFE4B5
+}
+
+span.highlightBlack {
+	background-color:black
+}
+
+span.TextBlue {
+	color: #2446D0;
+	font-weight: bold
+}
+
+div.LSB1 {
+	background-color: #EEE8CD
+}
+
+div.black { background-color: black
+}
+
+div.LSB2 {
+	background-color: #CAE1FF
+}
+
+div.black { background-color: black
+}
+
+.blockdl {
+	position: relative;
+	background-color:#fbe6c1;
+	padding: 10px;
+	margin-left: 5px;	
+		}
+.blockdl2 {
+	position: relative;
+/*	background-color:#ffefd5; */
+	background-color: #9CCFFF;
+	padding: 10px;
+	margin-left: 5px;	
+		}	
+.blockdl3 {
+	position: relative;
+
+	width: 350px;
+	background-color:#fbe6c1;
+	padding: 10px;
+	margin-left: 5px;	
+		}	
+
+div.footer {
+	font-family: Arial, Helvetica, sans-serif;
+	text-align: center;
+	background-color: #F0F8FF;
+	border-width: 1px;
+	border-color: dotted black; 
+	border-color: white;
+	padding: 0px;
+	link: color:green
+	a:visited  {color:yellow}
+	a:hover    {color:black}
+	a:active   {color:blue}
+}
+
+span.invisible {
+	visibility:hidden
+}
+
+a.back:active {
+	color: blue
+}
+
+a.back:visited {
+	color: red
+}
+
+a.back:hover {
+	font-size: 150%
+}
+
+a.back:hover {
+	color: black
+}
+
+a.next:active {
+	color: blue
+}
+
+a.next:visited {
+	color: red
+}
+
+a.next:hover {
+	font-size: 150%
+}
+
+a.next:hover {
+	color: black
+}
+
+/* The following CSS rule was suggested by Trenton Moss */
+
+/* (this was the old way I did it) */
+/* .hidden { */
+/* position: absolute; */
+/* left: -9000px; */
+/* top: 0; */
+/* } */
+/* The rule above positions the text off the screen, hiding it from visual users. */
+/* You can then apply it by assigning an attribute *//* class="hidden" to any text that you want to hide from visual browsers. */
+
+/* By assigning a background colour to the focus state of each link, */
+/* it becomes much easier for users to orientate themselves. */
+
+
+/* The following CSS rule was suggested by Trenton Moss */
+/* the next rule puts focus on links for visual users who use TAB to move among links, color yellow */
+
+a:active, a:focus {
+background: yellow;
+} 
+
+/* This hidden text CSS rule is from WebAIM's recommendations  */
+.hidden 
+{
+position:absolute;
+left:-10000px;
+top:auto;
+width:1px;
+height:1px;
+overflow:hidden;
+}
+
+
+/* This hidden skip to main content link CSS rule is from WebAIM's recommendations  */
+
+/* #skip a
+ { 
+position:absolute; 
+left:-10000px; 
+top:auto; 
+width:1px; 
+height:1px; 
+overflow:hidden;
+ } 
+*/
+
+ #skip a:focus 
+{ 
+position:static; 
+width:auto; 
+height:auto; 
+} 
+
+#skip a
+{
+    padding: 6px;
+    position: absolute;
+    top: -40px;
+    left: 0px;
+    color: black;
+    border-right: 1px solid white;
+    border-bottom: 1px solid white;
+    border-bottom-right-radius: 8px;
+    background: #FFFFCC;
+    -webkit-transition: top 1s ease-out;
+    transition: top 1s ease-out;
+    z-index: 100;
+}
+
+/* The .hidden CSS class should then be referenced from within the tag of the element. */
+/* <div id="skip"><a href="#content">Skip to Main Content</a></div> */
+/* ------- end of CSS skip to main content link text ------- */
+
+
+/* added based on Chris Spooner suggestion "10 Usability Crimes You Shouldn't Commit"
+http://line25.com/articles/10-usability-crimes-you-really-shouldnt-commit  */
+
+input:focus, select:focus, textarea:focus  {
+background: #CCFFFF; 
+}
+
+
+
+/* The .hidden CSS class should then be referenced from within the tag of the element. */
+/* <div id="skip"><a href="#content">Skip to Main Content</a></div> */
+
+
+/* DC added this based on the above for hovering with a mouse */
+a:hover {
+background: yellow;
+}
+
+.HideLabel { display: none; }
+
+/* example of hidelabel above from http://ncam.wgbh.org/publications/adm/guideline_b.html   */
+/* <span class="hidelabel"><label for="address">Enter your address accurately, */
+/* as this information will be sold to third-party vendors.</label></span>                 */
+/* <input type="text" name="address" id="address" />                                              */
+
+/* -------------- these were added for Surf's Up compatibility 2010/08/04 -------------------- */
+table#foot {
+	width: 100%;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13pt;
+	border-width: 2px;
+	border-color: #000000;
+
+}
+
+td.foot {
+	border-color: "#000000";
+	width: 0%;
+	padding: 5px;  
+	border-color: #000000;
+	border-width: 0px;
+	background-color: "#CCCCCC";
+}
+
+/* --------------------------------------------------------------------------  */
+
+/* added this on 2/21/2013 from WCAG 2.0 Technique G201: Giving users advanced warning when opening a new window. */
+
+/* <a href="external link goes here" target="_blank" class="info" >Text of Link Goes Here<span>Opens a new window</span></a> */
+
+a.info {
+position:relative;
+z-index:24;
+background-color:yellow
+text-decoration:none
+}
+
+a.info:active, a:info:focus
+{
+position:relative;
+z-index:24;
+background: yellow;
+text-decoration:none
+}
+a.info:hover, a.info:focus, a.info:active
+{
+z-index:25;
+background-color:#ff0
+}
+a.info span
+{
+position: absolute;
+left: -9000px;
+width: 0;
+overflow: hidden;
+}
+a.info:hover span, a.info:focus span, a.info:active span 
+{
+display:block;
+position:absolute;
+top:1em; left:0em; width:17em;
+border:1px solid #0cf;
+background-color:#cff;
+color:#000;
+text-align: center
+}
+
+/* -=-=-=  */
+
+a.zip {
+position:relative;
+z-index:24;
+background-color:yellow
+text-decoration:none
+}
+
+a.zip:active, a:zip:focus
+{
+position:relative;
+z-index:24;
+background: yellow;
+text-decoration:none
+}
+a.zip:hover, a.zip:focus, a.zip:active
+{
+z-index:25;
+background-color:#ff0
+}
+a.zip span
+{
+position: absolute;
+left: -9000px;
+width: 0;
+overflow: hidden;
+}
+a.zip:hover span, a.zip:focus span, a.zip:active span 
+{
+display:block;
+position:absolute;
+top:1em; left:0em; width:17em;
+border:1px solid #0cf;
+background-color:#cff;
+color:#000;
+text-align: center
+}
+
