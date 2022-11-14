@@ -4,7 +4,7 @@
 <a href="Glossary">Glossary</a>
 <a href="Keystrokes">Keystrokes</a>
 <a href="Contact Me">Contact</a>
-  <a href="Course Materials">Surfs_Up/Introduction.htm</a>
+  <a href="Course Materials">Surfs_Up/_Surfs_Up_Start_Here.htm</a>
 </nav>
 
 # Using the Internet with NVDA
