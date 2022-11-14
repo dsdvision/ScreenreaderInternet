@@ -4,6 +4,7 @@
 <a href="Glossary">Glossary</a>
 <a href="Keystrokes">Keystrokes</a>
 <a href="Contact">Contact me</a>
+<a href="Documents">Miscellaneous Documents</a>
 <a href="Surfs_Up/_Surfs_Up_Start_Here.htm">Course Materials</a>
 </nav>
 
