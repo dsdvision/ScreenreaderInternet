@@ -1,10 +1,10 @@
 <nav>
-<a href="NVDA Introduction">NVDA</a>
-<a href="Windows Narrator Basics">Narrator</a>
+<a href="NVDA">NVDA Introduction</a>
+<a href="Windows">Windows Narrator Introduction</a>
 <a href="Glossary">Glossary</a>
 <a href="Keystrokes">Keystrokes</a>
-<a href="Contact Me">Contact</a>
-  <a href="Course Materials">Surfs_Up/_Surfs_Up_Start_Here.htm</a>
+<a href="Contact">Contact me</a>
+<a href="Surfs_Up/_Surfs_Up_Start_Here.htm">Course Materials</a>
 </nav>
 
 # Using the Internet with NVDA
